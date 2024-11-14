@@ -1,0 +1,120 @@
+/* CSS */
+
+/* Estilos gerais */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: rgb(143,192,196);
+}
+
+/* Estilo para a navegação lateral */
+nav.menulateral {
+    width: 200px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    background-color: white;
+    padding-top: 20px;
+    
+}
+
+/* Estilos para as listas */
+nav.menulateral ul {
+    list-style-type: none;
+    padding: 10px;
+    margin: 1px;
+   
+}
+nav.menulateral ul li a {
+    text-decoration: none; /* Remove sublinhado dos links */
+    color: black;/* cor da fonte dos*/
+}
+
+nav.menulateral ul li {
+    position: relative;
+}
+
+/* Estilo para os itens do menu principal */
+nav.menulateral ul li.menu-item {
+    display: flex; /* Para alinhar checkbox e label na mesma linha */
+    align-items: center; /* Alinha verticalmente o checkbox e o texto */
+}
+
+/* Estilo para o label do menu principal */
+nav.menulateral ul li label {
+    padding: 1px;
+    font-weight: bold;
+    cursor: pointer;
+    color: black;
+    background-color: white;
+    flex-grow: 1;
+    line-height: 2.0;
+}
+    
+
+/* Estilo para o checkbox para aparecer antes do texto */
+nav.menulateral ul li input[type="checkbox"] {
+    margin-right: 8px;
+    cursor: pointer;
+}
+
+/* Estilo para item ativo */
+nav.menulateral ul li a.active {
+    background-color: #3d9e6e; /* Cor de destaque */
+    font-weight: bold;
+}
+
+
+
+/* Submenus visíveis sempre que o checkbox estiver marcado */
+nav.menulateral ul li input[type="checkbox"]:checked + label + ul {
+    display: block;
+}
+
+/* Submenus inicialmente ocultos */
+nav.menulateral ul li ul {
+    display: none;
+    padding-left: 10px; /* Indentação para o submenu */
+    margin: 0; /* Remove margin que poderia desalinhar */
+}
+
+/* Estilo para os links do submenu */
+nav.menulateral ul li ul li a {
+    display: block;
+    padding: 5px;
+    font-weight: normal;
+    text-decoration: none;
+    color: black;
+}
+
+/* Estilo para o conteúdo principal */
+div {
+    margin-left: 220px;
+    padding: 20px;
+}
+
+div h1 {
+    color: #333;
+    text-align: center;
+}
+
+div p {
+    font-size: 20px;
+    color: #555;
+    line-height: 1.6;
+    text-align: justify;
+    margin-left: 2%;
+    margin-right: 2%;
+}
+
+.PDF {
+    width: 100%;
+    height: 600px;
+}
+
+.imagem {
+    width: 100%;
+   
+}

@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="utf-8">
+    <title>Aula 07 - CSS (Menus de Navegação)</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <nav class="menulateral">
+        <ul>
+            <!-- Primeiro item de menu -->
+            <li>
+                <a href="index.html">Meu blog</a>
+            </li>
+
+            <!-- Menu "Lei 8112" com submenu expansível -->
+            <li>
+                <input type="checkbox" id="menu1" class="menu-checkbox" >
+                <label for="menu1"><a  href="lei8112.html">Lei 8112</a></label>
+                <ul>
+                    <li><a href="penalidades.html">Penalidades</a></li>
+                    <li><a href="provimento.html">Provimento</a></li>
+                    <li><a href="proibicoes.html">Proibições</a></li>
+                </ul>
+            </li>
+
+            <!-- Menu "Lei Improbidade" com submenu expansível -->
+            <li>
+                <input type="checkbox" id="menu2" class="menu-checkbox">
+                <label for="menu2"><a href="leiimprobidade.html">Lei Improbidade</a></label>
+                <ul>
+                    <li><a href="penalidadess.html">Penalidades</a></li>
+                    <li><a href="principios.html">Princípios</a></li>
+                    <li><a href="prescicao.html">Prescrição</a></li>
+                </ul>
+            </li>
+            
+            <!-- Menu "etica correios" com submenu expansível -->
+            <li>
+                <input type="checkbox" id="menu3" class="menu-checkbox" checked>
+                <label for="menu3"><a class="active" href="eticacorreios.html">Ética correios</a></label>
+                <ul>
+                    <li><a href="abrangencia.html">Abragência </a></li>
+                    <li><a href="objetivos.html">Objetivo </a></li>
+                    <li><a href="principios2.html">Principios </a></li>
+                    <li><a href="quizzcorreios.html">Quiz correios</a></li>
+                </ul>
+            </li>
+
+            
+        </ul>
+    </nav>
+
+    <div style="margin-left:16%; padding:1px 16px; height:1000px;">
+        <h1>Código ética correios</h1>
+        <p><object class="PDF" data="eticacorreios.pdf" type="application/pdf"></object></p>
+
+       
+    </div>
+</body>
+</html>
